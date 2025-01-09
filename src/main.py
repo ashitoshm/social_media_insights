@@ -4,8 +4,8 @@ import plotly.express as px
 data = pd.read_csv('./src/data/social_media_final_draft.csv')
 
 st.set_page_config(
-    page_title="Social Media Performance Dashboard",
-    page_icon="🚀",
+    page_title="UwUlytics",
+    page_icon="🎀",
     layout="wide"
 )
 
@@ -321,6 +321,6 @@ with col2:
 
 st.markdown("""
     <div style='text-align: center; color: #666; padding: 20px;'>
-        Made with ❤️ by 🎀 Barbie Girls in the Barbie World 🎀
+        Made with 💋 by 🎀 Barbie Girls in the Barbie World 🎀
     </div>
 """, unsafe_allow_html=True)
