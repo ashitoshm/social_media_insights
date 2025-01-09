@@ -1,18 +1,18 @@
 import requests
 import re
 import json
-from dotenv import load_dotenv
-import os
+# from dotenv import load_dotenv
+# import os
 
-load_dotenv()
+# load_dotenv()
 
-APP_KEY = os.getenv("APP_KEY")
+# APP_KEY = os.getenv("APP_KEY")
 
 def hit_api(input_string):
     url = "https://api.langflow.astra.datastax.com/lf/db79bb5b-44db-4f88-8bd6-aa4f83e3dca1/api/v1/run/167c893d-aaec-4c65-b63f-c057c9276fef?stream=false"
     headers = {
         "Content-Type": "application/json",
-        "Authorization": f"Bearer {APP_KEY}"
+        "Authorization": f"Bearer AstraCS:EXZPfTFRoKJnvgwYfkCWkENl:d62f723e714996c924234c4023d4f76ca18f5423360af746bc6aa7eec5a5fd83"
     }
     data = {
         "input_value": input_string,
